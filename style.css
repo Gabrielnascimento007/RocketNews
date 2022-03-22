@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(18, 18, 20, 1);
+  font-family: 'Spartan', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  display: grid;
+  grid-template-areas:
+    'header aside'
+    'main aside'
+    'footer aside';
+
+  grid-template-rows: 350px 440px;
+  grid-template-columns: 55% 40%;
+}
+
+#cabeçalho {
+  grid-area: header;
+  padding: 50px 30px 92px;
+}
+
+#main {
+  grid-area: main;
+  position: relative;
+  bottom: 100px;
+}
+
+main h2 {
+  padding-left: 36px;
+  padding-bottom: 9px;
+  color: rgba(8, 192, 94, 1);
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700 bold;
+  font-size: 24px;
+}
+
+#info {
+  padding-left: 36px;
+  color: rgba(255, 255, 255, 1);
+}
+
+#info strong {
+  position: relative;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700 bold;
+  font-size: 14px;
+}
+
+#info p {
+  position: relative;
+  top: 9px;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#info span {
+  position: relative;
+  top: 9px;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#email {
+  padding: 50px 36px;
+  color: rgba(168, 168, 168, 1);
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+#email input {
+  position: relative;
+  bottom: 20px;
+  width: 745px;
+  height: 48px;
+}
+
+#email blockquote {
+  border: 4px solid rgba(4, 211, 97, 1);
+  position: relative;
+  right: 6px;
+  top: 27px;
+  width: 6px;
+  height: 46px;
+}
+
+#email input::placeholder {
+  position: relative;
+  left: 15px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+#email button {
+  position: relative;
+  border: 1px solid rgba(130, 87, 229, 1);
+  background-color: rgba(130, 87, 229, 1);
+  bottom: 68px;
+  left: 744px;
+  width: 48px;
+  height: 48px;
+}
+
+aside {
+  height: 900px;
+  width: 720px;
+  grid-area: aside;
+  background-image: url(./assets/read_news.jpg);
+  background-position: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#fim {
+  grid-area: footer;
+}
+
+#fim strong {
+  position: relative;
+  bottom: 250px;
+  left: 40px;
+  color: rgba(130, 87, 229, 1);
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700 bold;
+  font-size: 14px;
+}
+
+#fim img {
+  position: relative;
+  top: 7px;
+}
